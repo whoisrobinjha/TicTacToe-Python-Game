@@ -21,8 +21,7 @@ class TicTacToeGUI:
         for i in range(9):
             row = i // 3
             col = i % 3
-            button = tk.Button(self.master, text=self.board[i], font=("Helvetica", 32), width=3, height=1,
-                               command=lambda idx=i: self.button_click(idx))
+            button = tk.Button(self.master, text=self.board[i], font=("Helvetica", 32), width=3, height=1, command=lambda idx=i: self.button_click(idx))
             button.grid(row=row, column=col)
             self.buttons.append(button)
 
